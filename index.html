@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Adventures</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><span class="logo-cr">Taniti</span> Adventures</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Explore</a>
+            <div class="dropdown-content">
+              <a href="#explore">Explore Taniti</a>
+              <a href="#stay">Stay and Dine</a>
+              <a href="#things-to-do">Things to Do</a>
+            </div>
+          </li>
+          <li><a href="#plan">Plan Your Trip</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="close-icon" onclick="toggleMenu()">&#10005;</div>
+      </nav>
+    </header>
+    <main id="hero">
+      <video autoplay muted loop id="hero-video">
+        <source src="./assets/background-hero.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="hero-text">
+        <h2>Experience the Magic of Taniti</h2>
+        <p>Discover the wonders of our tropical paradise</p>
+        <button onclick="location.href='#things-to-do'">Explore Now</button>
+        <!-- <button onclick="location.href='#plan'">Book Your Escape</button> -->
+      </div>
+    </main>
+
+    <section id="about" class="about">
+      <h2>Taniti: Your Gateway to Paradise</h2>
+      <p>
+        Taniti is a small, tropical island in the Pacific. While the island has
+        an area of less than 500 square miles, the terrain is varied and
+        includes both sandy and rocky beaches, a small but safe harbor, lush
+        tropical rainforests, and a mountainous interior that includes a small,
+        active volcano. Taniti has an indigenous population of about 20,000.
+        Until a recent increase in tourism, most the Tanitian economy was
+        dominated by fishing or agriculture.
+      </p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="assets/community.jpg"
+            alt="Traditional Festivity"
+            class="section-image"
+          />
+          <h3>Welcoming Communities</h3>
+          <p>
+            Taniti's rich tapestry extends beyond its landscapes. The island
+            boasts a vibrant indigenous population, renowned for their warm
+            hospitality and rich cultural heritage. Immerse yourself in the
+            local way of life, and experience the infectious smiles and
+            welcoming spirit of the Tanitian people. This newfound focus on
+            hospitality allows visitors to experience the island's unspoiled
+            beauty while enjoying modern amenities. Whether you seek relaxation
+            on the beach, adventure in the rainforest, or a glimpse into the
+            island's culture, Taniti promises an unforgettable experience.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="assets/waterfall.jpg"
+            alt="Waterfall"
+            class="section-image"
+          />
+          <h3>Explore the Verdant Heart of Taniti</h3>
+          <p>
+            Venture inland and discover the island's verdant heart. Lush
+            rainforests pulsate with vibrant flora and exotic fauna, offering a
+            chance to encounter nature's wonders. Hike through the rainforest
+            canopy, where sunlight filters through the leaves, creating a
+            dappled wonderland.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="assets/volcano.jpg"
+            alt="Active Volcano"
+            class="section-image"
+          />
+          <h3>Witness the Majestic Volcano</h3>
+          <p>
+            Taniti's mountainous interior boasts a majestic, yet small, active
+            volcano. Witness the awe-inspiring power of nature, and for the
+            adventurous, consider a guided trek to the volcano's rim for
+            breathtaking panoramic views.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- explore -->
+    <section id="explore" class="explore">
+      <h2 class="section-title">Explore Taniti</h2>
+      <img src="assets/home.jpg" alt="Natural Wonders" class="section-image" />
+      <p class="section-text">
+        Immerse yourself in Taniti's natural wonders. Discover lush rainforests
+        with guided hiking trails, pristine white sand beaches perfect for
+        snorkeling and surfing, and the awe-inspiring volcano with its unique
+        geological features. Taniti's diverse landscapes await your exploration,
+        offering breathtaking vistas and unforgettable experiences.
+      </p>
+    </section>
+
+    <section id="stay" class="stay">
+      <h2 class="section-title">Stay and Dine</h2>
+      <img
+        src="assets/food.jpg"
+        alt="A Woman Holding food"
+        class="section-image"
+        id="img-fix"
+      />
+      <p class="section-text">
+        Experience Taniti's hospitality with a wide range of accommodations to
+        suit every traveler's needs. From luxury resorts with ocean views to
+        cozy eco-lodges nestled in nature, find your ideal stay with amenities
+        that enhance your visit. Discover locally sourced cuisine served in
+        charming restaurants and enjoy dining experiences that reflect Taniti's
+        vibrant culture.
+      </p>
+    </section>
+
+    <section id="things-to-do" class="things-to-do">
+      <h2 class="section-title">Things to Do</h2>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/surfing.jpg"
+              alt="Surfing image"
+              class="section-image carousel-img"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/riding.jpg"
+              alt="Riding"
+              class="section-image carousel-img"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/vol-mount.jpg"
+              alt="Mountain and Volcano"
+              class="section-image carousel-img"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/walking.jpg"
+              alt="A Man Walking holding his dog"
+              class="section-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/enjoy.jpg    "
+              alt="A woman is Surfing"
+              class="section-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/music.jpg"
+              alt="a small band playing"
+              class="section-image"
+            />
+          </div>
+        </div>
+      </div>
+      <p class="section-text">
+        Dive into adventure with Taniti's outdoor activities. Trek through lush
+        rainforest trails teeming with wildlife, snorkel in crystal-clear waters
+        among vibrant coral reefs, catch waves while surfing along the coast,
+        and explore underwater marine life on guided diving excursions. Whether
+        you seek adrenaline-pumping adventures or tranquil escapes, Taniti
+        offers something for every explorer.
+      </p>
+    </section>
+
+    <section id="plan">
+  <h2>Plan Your Trip to Taniti</h2>
+
+  <div class="plan-grid">
+    <div class="plan-item">
+      <h3>Getting There</h3>
+      <p>Taniti is easily accessible by air and sea. Almost all visitors arrive by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Find travel information and estimated travel times from major cities:
+        <!-- <a href="[link to transportation info page]">Transportation Information</a>. -->
+      </p>
+      <img src="assets/airline.jpg" alt="Taniti Airplane">
+    </div>
+
+    <div class="plan-item">
+      <h3>Where to Stay</h3>
+      <p>Taniti offers a variety of accommodation options to suit every style and budget:
+        <ul>
+          <li>Luxury Resorts: Relax in paradise at our luxurious beachfront resorts, perfect for a romantic getaway or a family splurge.</li>
+          <li>Eco-Lodges: Immerse yourself in nature at our eco-friendly lodges nestled in the rainforest. Ideal for nature enthusiasts and those seeking a sustainable travel experience.</li>
+          <li>Budget-Friendly Hotels: Explore Taniti without breaking the bank. Our selection of comfortable and affordable hotels offer a great base for your adventures.</li>
+        </ul>
+        
+      </p>
+      <img src="assets/resort.jpg" alt="Taniti Resort">
+    </div>
+
+    <div class="plan-item">
+      <h3>Things to Know Before You Go</h3>
+      <p>Get prepared for your Tanitian adventure! Here's some essential information to help you plan:
+        <ul>
+          <li>Currency: The official currency of Taniti is the U.S. dollar (USD). Many businesses also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+          <li>Visas: Ensure you have the necessary travel documents before your trip. Check if you need a visa to visit Taniti [link to visa application page if applicable].</li>
+          <li>Language: Many younger Tanitians speak fluent English, but very little English is spoken in rural areas, especially by older residents. Learning a few basic phrases in the local language can enhance your experience.</li>
+          <li>Culture: Respect local customs and traditions. Tanitians are known for their hospitality, and participating in local cultural events can enrich your visit. [Link to a dedicated cultural guide page if needed]</li>
+          <li>Weather: Taniti enjoys a tropical climate with warm temperatures year-round. The rainy season occurs from November to April. Pack accordingly for your trip dates.</li>
+          <li>Legal Information: The legal drinking age on Taniti is 18, and it is not strictly enforced. Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m. Smoking is allowed in designated areas. Helmets are required by law for bicycle rentals.</li>
+        </ul>
+      </p>
+      <img src="assets/currency.jpg" alt="Taniti Currency">
+    </div>
+
+    <div class="plan-item">
+      <h3>Transportation</h3>
+      <p>Taniti offers various transportation options to help you explore the island:
+        <ul>
+          <li>Public Buses: Serve Taniti City and run from 5 a.m. to 11 p.m. every day.</li>
+          <li>Private Buses: Serve the rest of the island.</li>
+          <li>Taxis: Available in Taniti City.</li>
+          <li>Rental Cars: Can be rented from a local rental agency near the airport.</li>
+          <li>Bicycles: Bikes and helmets are available to rent from several vendors. Helmets are required by law.</li>
+        </ul>
+      </p>
+      <img src="assets/taxi.jpg" alt="Taniti Transport">
+    </div>
+  </div>
+
+  <button class="section-btn" onclick="location.href='#plan'">Book Your Escape</button>
+</section>
+
+    <section id="contact">
+  <h2>Contact Us</h2>
+  <img src="assets/contact.jpg" alt="Contact Image" class="section-image" />
+  <p>Have questions? Get in touch with us to learn more about Taniti and how to make the most of your visit.</p>
+  
+  <div class="contact-methods">
+    <p><strong>Email:</strong> <a href="mailto:info@visittaniti.com">info@visittaniti.com</a></p>
+    <p><strong>Phone:</strong> +1 (800) 555-1234</p>
+  </div>
+
+  <form class="contact-form" action="/submit-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+  
+  <div class="social-media">
+    <p>Connect with us on social media:</p>
+    <a href="https://www.facebook.com/visittaniti" target="_blank">Facebook</a> | 
+    <a href="https://www.instagram.com/visittaniti" target="_blank">Instagram</a> | 
+    <a href="https://www.twitter.com/visittaniti" target="_blank">Twitter</a>
+  </div>
+  
+  <div class="visitor-resources">
+    <p>Check out our <a href="#about">visitor resources</a> for downloadable guides, brochures, and maps to help plan your trip.</p>
+  </div>
+  
+  <p class="call-to-action">Let's chat! Start planning your dream vacation today!</p>
+</section>
+    <footer>
+      <div class="footer-content">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Explore</a>
+            <div class="dropdown-content">
+              <a href="#explore">Explore Taniti</a>
+              <a href="#stay">Stay and Dine</a>
+              <a href="#things-to-do">Things to Do</a>
+            </div>
+          </li>
+          <li><a href="#plan">Plan Your Trip</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <p>© 2024 Taniti Adventures. All Rights Reserved.</p>
+        <p>Taniti Adventures, 123 Island Rd, Taniti City, Pacific Islands</p>
+        <p>Contact us: info@tanitiadventures.com | +1 (555) 123-4567</p>
+        <button class="btn-reference" onclick="window.location.href='reference.html'">References</button>
+      </div>
+    </footer>
+    <!-- Cookie banner -->
+    <div class="cookie-banner">
+      <p>
+        This website uses cookies to personalize your experience (remembering preferences), track usage (improve the site), and enable features.
+      </p>
+      <p>Accept cookies for targeted ads?</p>
+      <div>
+        <button id="accept-cookies">Accept</button>
+        <button id="deny-cookies">Deny</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
